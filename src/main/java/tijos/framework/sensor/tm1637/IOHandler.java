@@ -28,7 +28,7 @@ class IOHandler {
 		this.clkPinId = clkPinId;
 		this.dataPinId = dataPinId;
 
-		gpio.setWorkMode(dataPinId, TiGPIO.IO_FLOATING_OD);
+		gpio.setWorkMode(dataPinId, TiGPIO.OUTPUT_OD);
 		gpio.setWorkMode(clkPinId, TiGPIO.OUTPUT_OD);
 
 	}
